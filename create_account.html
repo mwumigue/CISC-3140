@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create an account | Venti Cafe</title>
+    <link rel="stylesheet" type="text/css" href="project.css">
+    <link rel="icon" type="image/png" href="/Project/Webpage-logos/venti-cafe-website-favicon-color.png">
+    <script src="proyect.js"></script>
+</head>
+<body>
+    <div class="main_body">
+        <!--Header-->
+        <div class="header">
+            <div id="login_header_logo_container">
+                <img id="login_header_logo" src="/Project/Webpage-logos/venti-cafe-high-resolution-logo-color-on-transparent-background.png">
+            </div>
+        </div>
+        <hr id="create_account_hr">
+        <div id="create_account_form">
+            <form action="create_account.php" method="post">
+                <table id="create_account_table">
+                    <tr>
+                        <td><h2>Create an account</h2></td>
+                    </tr>
+                    <tr>
+                        <td>* Required field</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div class='full-input'>
+                                <label for='create_account_first_name'>* First Name</label>
+                                <input type='text' name='create_account_first_name' id="create_account_first_name" required>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div class='full-input'>
+                                <label for='create_account_last_name'>* Last Name</label>
+                                <input type='text' name='create_account_last_name' required>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div class='full-input'>
+                                <label for='create_account_email'>* Email</label>
+                                <input type='email' name='create_account_email' required>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div class='full-input'>
+                                <label for='create_account_password'>* Password</label>
+                                <input type='password' name='create_account_password' required>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="full-input">
+                                <label for="create_account_birthday">* Birthday</label>
+                                <input type="date" name="create_account_birthday" id="birthday">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="receive_offer_notifications" name="receive_offer_notifications">
+                            <label for="receive_offer_notifications">Yes, I would like to receive offer notifications</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="term_agreement" required>
+                            <label for="term_agreement">I agree with Venti Cafe account creation terms*</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" value="Create account" id="create_account_button">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

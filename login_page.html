@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Venti Cafe</title>
+    <link rel="icon" type="image/png" href="/Project/Webpage-logos/venti-cafe-website-favicon-color.png">
+    <link rel="stylesheet" type="text/css" href="project.css">
+    <script src="proyect.js"></script>
+</head>
+<body>
+    <div class="main_body">
+        <!--Header-->
+        <section class="header">
+            <div id="login_header_logo_container">
+                <img id="login.php" src="/Project/Webpage-logos/venti-cafe-high-resolution-logo-color-on-transparent-background.png" height="75px">
+            </div>
+        <section/>
+        <hr>
+        <div id="sign_in_form">
+            <form action="login.php" method="post">
+                <table id="sign_in_form_table">
+                    <tr>
+                        <td colspan="2">
+                            <h2>Sign in or create account</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>* Required Field</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div class='full-input'>
+                                <label for='login_email'>* Email</label>
+                                <input type='email' name='login_email' required>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div class='full-input'>
+                                <label for='login_password'>* Password</label>
+                                <input type='password' name='login_password' required>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="recover_password.html">Forgot your password?</a> <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="create_account.html">Create account</a>
+                        </td>
+                        <td>
+                            <input type="submit" value="Sign in" id="sign_in_button"></input>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

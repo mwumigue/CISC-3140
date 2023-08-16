@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venti Cafe</title>
+    <link rel="icon" type="image/png" href="Webpage-logos/venti-cafe-website-favicon-color.png">
+    <link rel="stylesheet" href="project.css">
+    <script src="proyect.js" async></script>
+</head>
+<body>
+    <div class="main_body">
+        <!--Header-->
+        <section class="header">
+            <div class="logo_container">
+                <img id="heading_logo" src="Webpage-logos/venti-cafe-high-resolution-logo-color-on-transparent-background.png">
+            </div>
+        </section>
+
+        <!--Navigation Bar-->
+        <section class="navigation_bar">
+            <div class="topnav">
+                <a href="login_page.html">Log In</a>
+                <a href="create_account.html">Create Account</a>
+                <a href="about_us.html">About Us</a>
+                <a href="#main_menu_item_type">Cold Coffees</a>
+            </div>
+        </section>
+        
+        <section class="main_content">
+            <div class="column">
+                <div class="menu">
+                    <h3 class="main_menu_item_type">Cold Coffees</h3>
+                    <div class="main_menu_container">
+                        <div class="menu_item_container">
+                            <div class="menu_item">
+                                <div class="item_image">
+                                    <img src="item-photos/iced_chai_latte.jpg" alt="">
+                                </div>
+                                <div class="item_description_container">
+                                    <div class="item_description">
+                                        <div class="item_name">Iced Chai Latte</div>
+                                        <div class="item_size_options">
+                                            <table>
+                                                <tr class="item_size_buttons">
+                                                    <td width="33%">
+                                                        <center>
+                                                            <input type="radio" class="size_options" name="iced_chai_latte_sizes" id="small_iced_chai_latte">
+                                                            <label for="small_iced_chai_latte">
+                                                                <div class="size_icon_container">
+                                                                    <div class="size_icon_crop">
+                                                                        <img src="cup-size-icons/small_cup-removebg-preview.png" width="18px"/>
+                                                                    </div>
+                                                                </div>
+                                                            </label>
+                                                        </center>
+                                                    </td>
+                                                    <td width="33%">
+                                                        <center>
+                                                            <input type="radio" class="size_options" name="iced_chai_latte_sizes" id="medium_iced_chai_latte">
+                                                            <label for="medium_iced_chai_latte">
+                                                                <div class="size_icon_container">
+                                                                    <div class="size_icon_crop">
+                                                                        <img src="cup-size-icons/medium_cup-removebg-preview.png" width="20px"/>
+                                                                    </div>
+                                                                </div>
+                                                            </label>
+                                                        </center>
+                                                    </td>
+                                                    <td width="33%">
+                                                        <center>
+                                                            <input type="radio" class="size_options" name="iced_chai_latte_sizes" id="large_iced_chai_latte">
+                                                            <label for="large_iced_chai_latte">
+                                                                <div class="size_icon_container">
+                                                                    <div class="size_icon_crop">
+                                                                        <img src="cup-size-icons/large_cup-removebg-preview.png" width="22px"/>
+                                                                    </div>
+                                                                </div>
+                                                            </label>
+                                                        </center>
+                                                    </td>
+                                                </tr>
+                                                <tr class="item_size_price_tag">
+                                                    <td width="33%"><center><label for="small_iced_chai_latte" class="item_price" id="small_iced_chai_latte_price">$5.00</label></center></td>
+                                                    <td width="33%"><center><label for="medium_iced_chai_latte" class="item_price" id="medium_iced_chai_latte_price">$5.75</label></center></td>
+                                                    <td width="33%"><center><label for="large_iced_chai_latte" class="item_price" id="large_iced_chai_latte_price">$6.25</label></center></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <button class="add_to_cart_button">Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="menu_item_container">
+                            <div class="menu_item">
+                                <div class="item_image">
+                                    <img src="item-photos/iced_espresso.jpg" alt="">
+                                </div>
+                                <div class="item_description_container">
+                                    <div class="item_description">
+                                        <div class="item_name">Iced Espresso</div>
+                                        <div class="item_size_options">
+                                            <table>
+                                                <tr class="item_size_buttons">
+                                                    <td width="33%">
+                                                        <center>
+                                                            <input type="radio" name="iced_espresso_sizes" class="size_options" id="small_iced_espresso">
+                                                            <label for="small_iced_espresso">
+                                                                <div class="size_icon_container">
+                                                                    <div class="size_icon_crop">
+                                                                        <img src="cup-size-icons/small_cup-removebg-preview.png" width="18px"/>
+                                                                    </div>
+                                                                </div>
+                                                            </label>
+                                                        </center>
+                                                    </td>
+                                                    <td width="33%">
+                                                        <center>
+                                                            <input type="radio" name="iced_espresso_sizes" class="size_options" id="medium_iced_espresso">
+                                                            <label for="medium_iced_espresso">
+                                                                <div class="size_icon_container">
+                                                                    <div class="size_icon_crop">
+                                                                        <img src="cup-size-icons/medium_cup-removebg-preview.png" width="20px"/>
+                                                                    </div>
+                                                                </div>
+                                                            </label>
+                                                        </center>
+                                                    </td>
+                                                    <td width="33%">
+                                                        <center>
+                                                            <input type="radio" name="iced_espresso_sizes" class="size_options" id="large_iced_espresso">
+                                                            <label for="large_iced_espresso">
+                                                                <div class="size_icon_container">
+                                                                    <div class="size_icon_crop">
+                                                                        <img src="cup-size-icons/large_cup-removebg-preview.png" width="22px"/>
+                                                                    </div>
+                                                                </div>
+                                                            </label>
+                                                        </center>
+                                                    </td>
+                                                </tr>
+                                                <tr class="item_size_price_tag">
+                                                    <td width="33%"><center><label for="small_iced_espresso" class="item_price id="small_iced_espresso_price">$3.75</label></center></td>
+                                                    <td width="33%"><center><label for="medium_iced_espresso" class="item_price id="medium_iced_espresso_price">$4.50</label></center></td>
+                                                    <td width="33%"><center><label for="large_iced_espresso" class="item_price id="large_iced_espresso_price">$5.00</label></center></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <button class="add_to_cart_button">Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="menu_item_container">
+                            <div class="menu_item">
+                                <div class="item_image">
+                                    <img src="item-photos/iced_matcha_latte.jpg" alt="">
+                                </div>
+                                <div class="item_description_container">
+                                    <div class="item_description">
+                                        <div class="item_name">Iced Matcha Latte</div>
+                                        <div class="item_size_options">
+                                            <table>
+                                                <tr class="item_size_buttons">
+                                                    <td width="33%">
+                                                        <center>
+                                                            <input type="radio" name="iced_matcha_latte_sizes" class="size_options" id="small_iced_matcha_latte">
+                                                            <label for="small_iced_matcha_latte">
+                                                                <div class="size_icon_container">
+                                                                    <div class="size_icon_crop">
+                                                                        <img src="cup-size-icons/small_cup-removebg-preview.png" width="18px"/>
+                                                                    </div>
+                                                                </div>
+                                                            </label>
+                                                        </center>
+                                                    </td>
+                                                    <td width="33%">
+                                                        <center>
+                                                            <input type="radio" name="iced_matcha_latte_sizes" class="size_options" id="medium_iced_matcha_latte">
+                                                            <label for="medium_iced_matcha_latte">
+                                                                <div class="size_icon_container">
+                                                                    <div class="size_icon_crop">
+                                                                        <img src="cup-size-icons/medium_cup-removebg-preview.png" width="20px"/>
+                                                                    </div>
+                                                                </div>
+                                                            </label>
+                                                        </center>
+                                                    </td>
+                                                    <td width="33%">
+                                                        <center>
+                                                            <input type="radio" name="iced_matcha_latte_sizes" class="size_options" id="large_iced_matcha_latte">
+                                                            <label for="large_iced_matcha_latte">
+                                                                <div class="size_icon_container">
+                                                                    <div class="size_icon_crop">
+                                                                        <img src="cup-size-icons/large_cup-removebg-preview.png" width="22px"/>
+                                                                    </div>
+                                                                </div>
+                                                            </label>
+                                                        </center>
+                                                    </td>
+                                                </tr>
+                                                <tr class="item_size_price_tag">
+                                                    <td width="33%"><center><label for="small_iced_matcha_latte" class="item_price" id="small_iced_matcha_latte_price">$5.50</label></center></td>
+                                                    <td width="33%"><center><label for="medium_iced_matcha_latte" class="item_price" id="medium_iced_matcha_latte_price">$6.25</label></center></td>
+                                                    <td width="33%"><center><label for="large_iced_matcha_latte" class="item_price" id="large_iced_matcha_latte_price">$6.75</label></center></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <button class="add_to_cart_button">Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="menu_item_container">
+                            <div class="menu_item">
+                                <div class="item_image">
+                                    <img src="item-photos/iced_macchiato.jpg" alt="">
+                                </div>
+                                <div class="item_description_container">
+                                    <div class="item_description">
+                                        <div class="item_name">Iced Macchiato</div>
+                                        <div class="item_size_options">
+                                            <table>
+                                                <tr class="item_size_buttons">
+                                                    <td width="33%">
+                                                        <center>
+                                                            <input type="radio" name="iced_macchiato_sizes" class="size_options" id="small_iced_macchiato">
+                                                            <label for="small_iced_macchiato">
+                                                                <div class="size_icon_container">
+                                                                    <div class="size_icon_crop">
+                                                                        <img src="cup-size-icons/small_cup-removebg-preview.png" width="18px"/>
+                                                                    </div>
+                                                                </div>
+                                                            </label>
+                                                        </center>
+                                                    </td>
+                                                    <td width="33%">
+                                                        <center>
+                                                            <input type="radio" name="iced_macchiato_sizes" class="size_options" id="medium_iced_macchiato">
+                                                            <label for="medium_iced_macchiato">
+                                                                <div class="size_icon_container">
+                                                                    <div class="size_icon_crop">
+                                                                        <img src="cup-size-icons/medium_cup-removebg-preview.png" width="20px"/>
+                                                                    </div>
+                                                                </div>
+                                                            </label>
+                                                        </center>
+                                                    </td>
+                                                    <td width="33%">
+                                                        <center>
+                                                            <input type="radio" name="iced_macchiato_sizes" class="size_options" id="large_iced_macchiato">
+                                                            <label for="large_iced_macchiato">
+                                                                <div class="size_icon_container">
+                                                                    <div class="size_icon_crop">
+                                                                        <img src="cup-size-icons/large_cup-removebg-preview.png" width="22px"/>
+                                                                    </div>
+                                                                </div>
+                                                            </label>
+                                                        </center>
+                                                    </td>
+                                                </tr>
+                                                <tr class="item_size_price_tag">
+                                                    <td width="33%"><center><label for="small_iced_macchiato" class="item_price" id="small_iced_macchiato_price">$4.00</label></center></td>
+                                                    <td width="33%"><center><label for="medium_iced_macchiato" class="item_price" id="medium_iced_macchiato_price">$4.75</label></center></td>
+                                                    <td width="33%"><center><label for="large_iced_macchiato" class="item_price" id="large_iced_macchiato_price">$5.25</label></center></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <button class="add_to_cart_button">Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="menu_item_container">
+                            <div class="menu_item">
+                                <div class="item_image">
+                                    <img src="item-photos/iced_tea.jpg" alt="">
+                                </div>
+                                <div class="item_description_container">
+                                    <div class="item_description">
+                                        <div class="item_name">Iced Tea</div>
+                                        <div class="item_size_options">
+                                            <table>
+                                                <tr class="item_size_buttons">
+                                                    <td width="33%">
+                                                        <center>
+                                                            <input type="radio" name="iced_tea_sizes" class="size_options" id="small_iced_tea">
+                                                            <label for="small_iced_tea">
+                                                                <div class="size_icon_container">
+                                                                    <div class="size_icon_crop">
+                                                                        <img src="cup-size-icons/small_cup-removebg-preview.png" width="18px"/>
+                                                                    </div>
+                                                                </div>
+                                                            </label>
+                                                        </center>
+                                                    </td>
+                                                    <td width="33%">
+                                                        <center>
+                                                            <input type="radio" name="iced_tea_sizes" class="size_options" id="medium_iced_tea">
+                                                            <label for="medium_iced_tea">
+                                                                <div class="size_icon_container">
+                                                                    <div class="size_icon_crop">
+                                                                        <img src="cup-size-icons/medium_cup-removebg-preview.png" width="20px"/>
+                                                                    </div>
+                                                                </div>
+                                                            </label>
+                                                        </center>
+                                                    </td>
+                                                    <td width="33%">
+                                                        <center>
+                                                            <input type="radio" name="iced_tea_sizes" class="size_options" id="large_iced_tea">
+                                                            <label for="large_iced_tea">
+                                                                <div class="size_icon_container">
+                                                                    <div class="size_icon_crop">
+                                                                        <img src="cup-size-icons/large_cup-removebg-preview.png" width="22px"/>
+                                                                    </div>
+                                                                </div>
+                                                            </label>
+                                                        </center>
+                                                    </td>
+                                                </tr>
+                                                <tr class="item_size_price_tag">
+                                                    <td width="33%"><center><label for="small_iced_tea" class="item_price" id="small_iced_tea_price">$3.00</label></center></td>
+                                                    <td width="33%"><center><label for="medium_iced_tea" class="item_price" id="medium_iced_tea_price">$3.75</label></center></td>
+                                                    <td width="33%"><center><label for="large_iced_tea" class="item_price" id="large_iced_tea_price">$4.25</label></center></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <button class="add_to_cart_button">Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="menu_item_container">
+                            <div class="menu_item">
+                                <div class="item_image">
+                                    <img src="item-photos/iced_latte.jpeg" alt="">
+                                </div>
+                                <div class="item_description_container">
+                                    <div class="item_description">
+                                        <div class="item_name">Iced Latte</div>
+                                        <div class="item_size_options">
+                                            <table>
+                                                <tr class="item_size_buttons">
+                                                    <td width="33%">
+                                                        <center>
+                                                            <input type="radio" name="iced_latte_sizes" class="size_options" id="small_iced_latte">
+                                                            <label for="small_iced_latte">
+                                                                <div class="size_icon_container">
+                                                                    <div class="size_icon_crop">
+                                                                        <img src="cup-size-icons/small_cup-removebg-preview.png" width="18px"/>
+                                                                    </div>
+                                                                </div>
+                                                            </label>
+                                                        </center>
+                                                    </td>
+                                                    <td width="33%">
+                                                        <center>
+                                                            <input type="radio" name="iced_latte_sizes" class="size_options" id="medium_iced_latte">
+                                                            <label for="medium_iced_latte">
+                                                                <div class="size_icon_container">
+                                                                    <div class="size_icon_crop">
+                                                                        <img src="cup-size-icons/medium_cup-removebg-preview.png" width="20px"/>
+                                                                    </div>
+                                                                </div>
+                                                            </label>
+                                                        </center>
+                                                    </td>
+                                                    <td width="33%">
+                                                        <center>
+                                                            <input type="radio" name="iced_latte_sizes" class="size_options" id="large_iced_latte">
+                                                            <label for="large_iced_latte">
+                                                                <div class="size_icon_container">
+                                                                    <div class="size_icon_crop">
+                                                                        <img src="cup-size-icons/large_cup-removebg-preview.png" width="22px"/>
+                                                                    </div>
+                                                                </div>
+                                                            </label>
+                                                        </center>
+                                                    </td>
+                                                </tr>
+                                                <tr class="item_size_price_tag">
+                                                    <td width="33%"><center><label for="small_iced_latte" class="item_price" id="small_iced_latte_price">$5.00</label></center></td>
+                                                    <td width="33%"><center><label for="medium_iced_latte" class="item_price" id="medium_iced_latte_price">$5.75</label></center></td>
+                                                    <td width="33%"><center><label for="large_iced_latte" class="item_price" id="large_iced_latte_price">$6.25</label></center></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <button class="add_to_cart_button">Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="menu_item_container">
+                            <div class="menu_item">
+                                <div class="item_image">
+                                    <img src="item-photos/iced_americano.png" alt="">
+                                </div>
+                                <div class="item_description_container">
+                                    <div class="item_description">
+                                        <div class="item_name">Iced Americano</div>
+                                        <div class="item_size_options">
+                                            <table>
+                                                <tr class="item_size_buttons">
+                                                    <td width="33%">
+                                                        <center>
+                                                            <input type="radio" name="iced_americano_sizes" class="size_options" id="small_iced_americano">
+                                                            <label for="small_iced_americano">
+                                                                <div class="size_icon_container">
+                                                                    <div class="size_icon_crop">
+                                                                        <img src="cup-size-icons/small_cup-removebg-preview.png" width="18px"/>
+                                                                    </div>
+                                                                </div>
+                                                            </label>
+                                                        </center>
+                                                    </td>
+                                                    <td width="33%">
+                                                        <center>
+                                                            <input type="radio" name="iced_americano_sizes" class="size_options" id="medium_iced_americano">
+                                                            <label for="medium_iced_americano">
+                                                                <div class="size_icon_container">
+                                                                    <div class="size_icon_crop">
+                                                                        <img src="cup-size-icons/medium_cup-removebg-preview.png" width="20px"/>
+                                                                    </div>
+                                                                </div>
+                                                            </label>
+                                                        </center>
+                                                    </td>
+                                                    <td width="33%">
+                                                        <center>
+                                                            <input type="radio" name="iced_americano_sizes" class="size_options" id="large_iced_americano">
+                                                            <label for="large_iced_americano">
+                                                                <div class="size_icon_container">
+                                                                    <div class="size_icon_crop">
+                                                                        <img src="cup-size-icons/large_cup-removebg-preview.png" width="22px"/>
+                                                                    </div>
+                                                                </div>
+                                                            </label>
+                                                        </center>
+                                                    </td>
+                                                </tr>
+                                                <tr class="item_size_price_tag">
+                                                    <td width="33%"><center><label for="small_iced_americano" class="item_price" id="small_iced_americano_price">$3.75</label></center></td>
+                                                    <td width="33%"><center><label for="medium_iced_americano" class="item_price" id="medium_iced_americano_price">$4.50</label></center></td>
+                                                    <td width="33%"><center><label for="large_iced_americano" class="item_price" id="large_iced_americano_price">$5.00</label></center></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <button class="add_to_cart_button">Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="menu_item_container">
+                            <div class="menu_item">
+                                <div class="item_image">
+                                    <img src="item-photos/iced_cappuccino.jpeg" alt="">
+                                </div>
+                                <div class="item_description_container">
+                                    <div class="item_description">
+                                        <div class="item_name">Iced Cappuccino</div>
+                                        <div class="item_size_options">
+                                            <table>
+                                                <tr class="item_size_buttons">
+                                                    <td width="33%">
+                                                        <center>
+                                                            <input type="radio" name="iced_cappuccino_sizes" class="size_options" id="small_iced_cappuccino">
+                                                            <label for="small_iced_cappuccino">
+                                                                <div class="size_icon_container">
+                                                                    <div class="size_icon_crop">
+                                                                        <img src="cup-size-icons/small_cup-removebg-preview.png" width="18px"/>
+                                                                    </div>
+                                                                </div>
+                                                            </label>
+                                                        </center>
+                                                    </td>
+                                                    <td width="33%">
+                                                        <center>
+                                                            <input type="radio" name="iced_cappuccino_sizes" class="size_options" id="medium_iced_cappuccino">
+                                                            <label for="medium_iced_cappuccino">
+                                                                <div class="size_icon_container">
+                                                                    <div class="size_icon_crop">
+                                                                        <img src="cup-size-icons/medium_cup-removebg-preview.png" width="20px"/>
+                                                                    </div>
+                                                                </div>
+                                                            </label>
+                                                        </center>
+                                                    </td>
+                                                    <td width="33%">
+                                                        <center>
+                                                            <input type="radio" name="iced_cappuccino_sizes" class="size_options" id="large_iced_cappuccino">
+                                                            <label for="large_iced_cappuccino">
+                                                                <div class="size_icon_container">
+                                                                    <div class="size_icon_crop">
+                                                                        <img src="cup-size-icons/large_cup-removebg-preview.png" width="22px"/>
+                                                                    </div>
+                                                                </div>
+                                                            </label>
+                                                        </center>
+                                                    </td>
+                                                </tr>
+                                                <tr class="item_size_price_tag">
+                                                    <td width="33%"><center><label for="small_iced_cappuccino" class="item_price" id="small_iced_cappuccino_price">$4.00</label></center></td>
+                                                    <td width="33%"><center><label for="medium_iced_cappuccino" class="item_price" id="medium_iced_cappuccino_price">$4.75</label></center></td>
+                                                    <td width="33%"><center><label for="large_iced_cappuccino" class="item_price" id="large_iced_cappucino_price">$5.25</label></center></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <button class="add_to_cart_button">Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="menu_item_container">
+                            <div class="menu_item">
+                                <div class="item_image">
+                                    <img src="item-photos/iced_coffee.webp" alt="">
+                                </div>
+                                <div class="item_description_container">
+                                    <div class="item_description">
+                                        <div class="item_name">Iced Coffee</div>
+                                        <div class="item_size_options">
+                                            <table>
+                                                <tr class="item_size_buttons">
+                                                    <td width="33%">
+                                                        <center>
+                                                            <input type="radio" name="iced_coffee_sizes" class="size_options" id="small_iced_coffee">
+                                                            <label for="small_iced_coffee">
+                                                                <div class="size_icon_container">
+                                                                    <div class="size_icon_crop">
+                                                                        <img src="cup-size-icons/small_cup-removebg-preview.png" width="18px"/>
+                                                                    </div>
+                                                                </div>
+                                                            </label>
+                                                        </center>
+                                                    </td>
+                                                    <td width="33%">
+                                                        <center>
+                                                            <input type="radio" name="iced_coffee_sizes" class="size_options" id="medium_iced_coffee">
+                                                            <label for="medium_iced_coffee">
+                                                                <div class="size_icon_container">
+                                                                    <div class="size_icon_crop">
+                                                                        <img src="cup-size-icons/medium_cup-removebg-preview.png" width="20px"/>
+                                                                    </div>
+                                                                </div>
+                                                            </label>
+                                                        </center>
+                                                    </td>
+                                                    <td width="33%">
+                                                        <center>
+                                                            <input type="radio" name="iced_coffee_sizes" class="size_options" id="large_iced_coffee">
+                                                            <label for="large_iced_coffee">
+                                                                <div class="size_icon_container">
+                                                                    <div class="size_icon_crop">
+                                                                        <img src="cup-size-icons/large_cup-removebg-preview.png" width="22px"/>
+                                                                    </div>
+                                                                </div>
+                                                            </label>
+                                                        </center>
+                                                    </td>
+                                                </tr>
+                                                <tr class="item_size_price_tag">
+                                                    <td width="33%"><center><label for="small_iced_coffee" class="item_price" id="small_iced_coffee_price">$3.50</label></center></td>
+                                                    <td width="33%"><center><label for="medium_iced_coffee" class="item_price" id="medium_iced_coffee_price">$4.25</label></center></td>
+                                                    <td width="33%"><center><label for="large_iced_coffee" class="item_price" id="large_iced_coffee_price">$5.00</label></center></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <button class="add_to_cart_button">Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="menu_item_container">
+                            <div class="menu_item">
+                                <div class="item_image">
+                                    <img src="item-photos/lemonade.jpg" alt="">
+                                </div>
+                                <div class="item_description_container">
+                                    <div class="item_description">
+                                        <div class="item_name">Lemonade</div>
+                                        <div class="item_size_options">
+                                            <table>
+                                                <tr class="item_size_buttons">
+                                                    <td width="33%">
+                                                        <center>
+                                                            <input type="radio" name="lemonade_sizes" class="size_options" id="small_lemonade">
+                                                            <label for="small_lemonade">
+                                                                <div class="size_icon_container">
+                                                                    <div class="size_icon_crop">
+                                                                        <img src="cup-size-icons/small_cup-removebg-preview.png" width="18px"/>
+                                                                    </div>
+                                                                </div>
+                                                            </label>
+                                                        </center>
+                                                    </td>
+                                                    <td width="33%">
+                                                        <center>
+                                                            <input type="radio" name="lemonade_sizes" class="size_options" id="medium_lemonade">
+                                                            <label for="medium_lemonade">
+                                                                <div class="size_icon_container">
+                                                                    <div class="size_icon_crop">
+                                                                        <img src="cup-size-icons/medium_cup-removebg-preview.png" width="20px"/>
+                                                                    </div>
+                                                                </div>
+                                                            </label>
+                                                        </center>
+                                                    </td>
+                                                    <td width="33%">
+                                                        <center>
+                                                            <input type="radio" name="lemonade_sizes" class="size_options" id="large_lemonade">
+                                                            <label for="large_lemonade">
+                                                                <div class="size_icon_container">
+                                                                    <div class="size_icon_crop">
+                                                                        <img src="cup-size-icons/large_cup-removebg-preview.png" width="22px"/>
+                                                                    </div>
+                                                                </div>
+                                                            </label>
+                                                        </center>
+                                                    </td>
+                                                </tr>
+                                                <tr class="item_size_price_tag">
+                                                    <td width="33%"><center><label for="small_lemonade" class="item_price" id="small_lemonade_price">$3.50</label></center></td>
+                                                    <td width="33%"><center><label for="medium_lemonade" class="item_price" id="medium_lemonade_price">$4.25</label></center></td>
+                                                    <td width="33%"><center><label for="large_lemonade" class="item_price" id="large_lemonade_price">$5.00</label></center></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <button class="add_to_cart_button">Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="column">
+                <div class="checkout_container">
+                    <h3>Order Review</h3>
+                    <div id="order_content">
+                    </div>
+                    <hr>
+
+                    <h3>Contact Information</h3>
+                    <form action="">
+                        <div class='full-input'>
+                            <label for='name'>Name</label>
+                            <input type='text' name='name' required>
+                        </div>
+                        <div class='full-input'>
+                            <label for='email'>Email</label>
+                            <input type='text' name='email'>
+                        </div>
+                        <div class='full-input'>
+                            <label for='phone'>Phone Number</label>
+                            <input type='text' name='phone'>
+                        </div>
+                        <div class="pickup_and_delivery">
+                            <input type="radio" name="pickup_and_delivery_options" class="contact_information" value="Delivery" id="delivery">
+                            <label for="delivery">Delivery</label>
+                            <input type="radio" name="pickup_and_delivery_options" class="contact_information" value="Pickup" id="pickup">
+                            <label for="pickup">Pickup</label>
+                        </div>
+                        <div class="full-input" id="delivery_address_container">
+                            <label for="delivery_address">Delivery Address</label>
+                            <textarea name="delivery_address" id="delivery_address"></textarea>
+                        </div>
+
+                        <h4>Order Notifications</h4>
+                        <div class="notifications">
+                            <input type="checkbox" id="text_message_notification" name="text_message_notification" checked>
+                            <label for="text_message_notification">Text Message</label>
+                            <input type="checkbox" id="email_notification" name="email_notification">
+                            <label for="email_notification">Email</label>
+                        </div>
+                        <h3>Payment</h3>
+                        <h4>Tip Amount</h4>
+                        <div id="tip_options">
+                            <table class="fixed_tip_options">
+                                <tr>
+                                    <td width="33%">
+                                        <input type="radio" name="tip_option" id="15%_tip" value="0.15">
+                                        <label for="15%_tip">
+                                            <div class="fixed_tip_option">15%</div>
+                                        </label>
+                                    </td>
+                                    <td width="33%">
+                                        <input type="radio" name="tip_option" id="18%_tip" value="0.18">
+                                        <label for="18%_tip">
+                                            <div class="fixed_tip_option">18%</div>
+                                        </label>
+                                    </td>
+                                    <td width="33%">
+                                        <input type="radio" name="tip_option" id="20%_tip" value="0.2">
+                                        <label for="20%_tip">
+                                            <div class="fixed_tip_option">20%</div>
+                                        </label>
+                                    </td>
+                                </tr>
+                            </table>
+                            <input type="radio" name="tip_option" value="no_tip" id="no_tip_option" checked>
+                            <label for="no_tip_option">No Tip</label>
+                            <input type="radio" name="tip_option" value="custom_tip" id="custom_tip_option">
+                            <label for="custom_tip_option">Custom Tip</label>
+                            <div id="custom_tip_input_container">
+                                <div class='full-input'>
+                                    <label for='custom_tip_input'>Custom Tip</label>
+                                    <input type='text' name='custom_tip_input' id="custom_tip_input">
+                                </div>
+                                <button id="apply_custom_tip_button">apply</button>
+                            </div>
+                            <div class="payment">
+                            <div class="payment_options">
+                                <input type="radio" name="payment_Options" value="pay_on_store" id="pay_on_store_option">
+                                <label for="pay_on_store_option">Pay On Store</label> <br>
+                                <input type="radio" name="payment_Options" value="credit_card" id="credit_card_option">
+                                <label for="credit_card_option">Credit Card</label>
+                            </div>
+                            <table class="payment_information" id="payment_information">
+                                <tr>
+                                    <td id="card_name_container" colspan="3">
+                                        <label for='name'>Name On Card</label>
+                                        <input type='text' name='email'>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="card_number_container" width="50%">
+                                        <label for='name'>Card Number</label>
+                                        <input type='text' name='email'>
+                                    </td>
+                                    <td id="card_expiration_date_container" width="25%">
+                                        <label for='name'>Expiration Date</label>
+                                        <input type='month' name='email' min="2023-08">
+                                    </td>
+                                    <td id="card_cvv_container" width="20%">
+                                        <label for='name'>CVV</label>
+                                        <input type='text' name='email'>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="subtotal_price">
+                            <div id="subtotal_price_description">Subtotal</div>
+                            <div id="subtotal_price_amount">$0</div>
+                        </div>
+                        <div class="tip">
+                            <div id="tip_description">Tip</div>
+                            <div id="tip_amount">$0</div>
+                        </div>
+                        <div class="tax">
+                            <div id="tax_description">Tax</div>
+                            <div id="tax_amount">$0</div>
+                        </div>
+                        <div class="total">
+                            <div id="total_description">Total</div>
+                            <div id="total_amount">$0</div>
+                        </div>
+                        <div>
+                            <input type="submit" name="place_order_button" value="Place Order" id="place_order_button">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

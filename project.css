@@ -1,0 +1,653 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+
+body{
+    background-color: #C8CDD1;
+    font-family: 'Julius Sans One', sans-serif;
+    color: #182128;
+    margin-bottom: 50px;
+}
+
+.main_body{
+    min-width: 525px;
+    width: 90%;
+    margin: auto;
+}
+
+hr{
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+input[type=checkbox]{
+    width: fit-content; 
+    height: fit-content;
+    text-align: center;
+    border: 0; 
+    appearance: none;
+    cursor: pointer;
+}
+
+input[type=checkbox]::before, input[type=checkbox]::after{
+    border-radius: 0.25rem;
+    pointer-events: none;
+}
+
+input[type=checkbox]::after{
+    background: #C8CDD1;
+    border: 1px solid #829199;
+    font-size: 15px;
+    color: transparent;
+    content: '✓';
+}
+
+input[type=checkbox]:checked::after{
+    color: #182121;
+}
+
+input[type=number]{
+    color: #182121;
+    font-family: inherit;
+    font-size: inherit;
+    border-radius: 0.5rem;
+    border: 1px solid #182121;
+    background-color: transparent;
+    text-align: center;
+    width: 50px;
+}
+
+input[type=number]:focus{
+    outline: none;
+}
+
+.header{
+    margin-top: 15px;
+    width: 100%;
+    height: 100px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.logo_container{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 100%;
+    width: 500px;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+
+.logo_container #heading_logo{
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.navigation_bar{
+    width: 100%;
+    display: block;
+    background-color: #508B98;
+    margin-bottom: 15px;
+}
+
+.topnav {
+    overflow: hidden;
+    width: fit-content;
+    max-width: 100%;
+    height: 100%;
+    display: block;
+    margin: auto;
+}
+
+.topnav a {
+    float: left;
+    color: #C8CDD1;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: inherit;
+}
+
+.topnav a:hover {
+    text-decoration: underline;
+}
+
+.main_content{
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+}
+
+@media (max-width:1200px){
+    .main_content{
+        display:block;
+    }
+}
+
+.main_menu_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.menu{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 650px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #182128;
+    border-radius: 0.5rem;
+}
+
+.menu_item_container{
+    display: block;
+    border-radius: 0.5rem;
+    height: 172px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+.menu_item{
+    border-radius: 0.5rem;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    border: 1px solid #182121;
+    box-sizing: border-box;
+}
+
+.item_image{
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+
+.item_image img{
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+
+.item_description_container{
+    padding: 20px;
+}
+
+.item_description{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.item_name{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 20px;
+    font-family: inherit;
+}
+
+.item_size_options{
+    width: 100%;
+    position: absolute;
+    top: 25px;
+    right: 0;
+    font-family: inherit;
+}
+
+.item_size_options table{
+    width: 100%;
+}
+
+.item_size_buttons input[type=radio]{
+    display: none;
+}
+
+.size_icon_container {
+    background-color: transparent;
+    border: 1px solid #182121;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.size_icon_container:hover{
+    cursor: pointer;
+}
+
+.size_icon_crop {
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.size_icon_crop img{
+    display: block;
+    position: absolute;
+    margin: auto;
+    top: -100%;
+    right: -100%;
+    bottom: -100%;
+    left: -100%;
+}
+
+.item_size_buttons input[type=radio]:checked + label > .size_icon_container{
+    background: #508B98;
+}
+
+.item_description_container button{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 25px;
+    font-size: 15px;
+    font-family: inherit;
+    background: #508B98;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.item_description button{
+    cursor: pointer;
+}
+
+.checkout_container{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 250px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #182128;
+    border-radius: 0.5rem;
+}
+
+.edit_item{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+}
+
+.item_row{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.full-input{
+    display: inline-block;
+    padding: 0.25rem;
+    border: 1px solid #829199;
+    border-radius: 0.5rem;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.pickup_and_delivery{
+    margin-bottom: 15px;
+}
+
+.full-input{
+    display: inline-block;
+    padding: 0.25rem;
+    border: 1px solid #829199;
+    border-radius: 0.5rem;
+    margin-bottom: 15px;
+    width: 100%;
+}
+.full-input input{
+    background: none;
+    outline: none;
+    border: none;
+    display: block;
+    line-height: 1.2em;
+    width: 96%;
+    font-size: inherit;
+    font-family: inherit;
+    padding: 0.5rem;
+    color: #182121;
+}
+.full-input label{
+    top: -0.5rem;
+    left: 1rem;
+    padding: 0 0.5rem;
+    display: block;
+    font-size: 0.8rem;
+    color: #182121;
+}
+
+.full-input textarea{
+    width: 96%;
+    background: none;
+    border: none;
+    outline: none;
+    display: inline-block;
+    padding: 0.5rem;
+    line-height: 1.2em;
+    font-size: inherit;
+    font-family: inherit;
+    overflow: auto;
+    height: 100px;
+    resize: none;
+}
+
+#delivery_address_container{
+    display: none;
+    height: 75px;
+}
+
+.payment{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.payment_information{
+    display: none;
+    border: 1px solid #829199;
+    border-radius: 0.5rem;
+    width: 100%;
+    font-size: inherit;
+    font-family: inherit;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+#custom_tip_input_container{
+    margin-top: 1rem;
+    display: none;
+    width: 100%;
+}
+
+#custom_tip_input_container div{
+    width: 65%;
+    vertical-align: middle;
+}
+
+#custom_tip_input_container button{
+    font: inherit;
+    font-size: inherit;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #508B98;
+    width: 26%;
+    height: 2rem;
+}
+
+#custom_tip_input_container button:hover{
+    background-color: #264A4D;
+    color: #C8CDD1;
+}
+
+#custom_tip_input_container input{
+    width: 95%;
+}
+
+button, #sign_in_button, #create_account_button{
+    font-family: inherit;
+    font-size: 19px;
+    height: 50px;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #508B98;
+    cursor: pointer;
+}
+
+button:active, #sign_in_button:active, #create_account_button:active{
+    background-color: #264A4D;
+    color: #C8CDD1;
+}
+
+#place_order_button{
+    margin-top: 25px;
+    width: 100%;
+    font-family: inherit;
+    font-size: 2rem;
+    border-radius: 0.5rem;
+    outline: none;
+    border: none;
+    background-color: #508B98;
+    color: #182121;
+}
+
+#place_order_button:hover{
+    cursor: pointer;
+}
+
+#place_order_button:active{
+    background-color: #264A4D;
+    color: #C8CDD1;
+}
+
+.subtotal_price, .tip, .total, .tax{
+    display: grid;
+    grid-template-columns: 1fr 0.35fr;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#subtotal_price_amount, #tip_amount, #total_amount, #tax_amount{
+    text-align: right;
+}
+
+#login_header_logo_container{
+    width: fit-content;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#login_header_logo{
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#sign_in_form, #create_account_form{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#sign_in_form_table{
+    width: 100%;
+}
+
+#sign_in_form_table td, #create_account_table td{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#sign_in_form h2, #create_account_form h2{
+    text-align: center;
+}
+
+#sign_in_form a{
+    color: inherit;
+}
+
+#sign_in_form a:link{
+    color: inherit;
+}
+
+#sign_in_button, #create_account_button{
+    float: right;
+}
+
+/*Create Account Page*/
+#create_account_table{
+    width: 100%;
+}
+
+.fixed_tip_options{
+    width: 100%;
+}
+
+.fixed_tip_options input[type=radio]{
+    display: none;
+}
+
+.fixed_tip_option{
+    border: 1px solid #829199;
+    background-color: transparent;
+    height: 3rem;
+    border-radius: 0.5rem;
+    font-family: inherit;
+    font-size: inherit;
+    display: grid;
+    place-items: center;
+}
+
+.fixed_tip_option:hover{
+    cursor: pointer;
+}
+
+.fixed_tip_options input[type=radio]:checked + label > .fixed_tip_option{
+    background-color: #508B98;
+    border: none;
+}
+
+.tip_buttons{
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    height: 3rem;
+    border-radius: 0.5rem;
+    outline: none;
+    border: none;
+    background-color: #508B98;
+    color: #182121;
+}
+
+.tip_buttons:active{
+    background-color: #264A4D;
+    color: #C8CDD1;
+}
+
+.tip_buttons_container{
+    margin-bottom: 1rem;
+}
+
+#custom_tip_input_container{
+    margin-top: 1rem;
+    display: none;
+    width: 100%;
+}
+
+#custom_tip_input_container div{
+    width: 70%;
+    vertical-align: middle;
+}
+
+#custom_tip_input_container button{
+    font: inherit;
+    font-size: inherit;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #508B98;
+    width: 26%;
+    height: 2rem;
+}
+
+#custom_tip_input_container button:hover{
+    background-color: #264A4D;
+    color: #C8CDD1;
+}
+
+#custom_tip_input_container input{
+    width: 95%;
+}
+
+.remove_button_container{
+    align-items: right;
+}
+
+.remove_button{
+    width: fit-content;
+    height: fit-content;
+    font-family: inherit;
+    font-size: inherit;
+    border: none;
+    color: inherit;
+    background-color: inherit;
+    text-decoration: underline;
+}
+
+.remove_button:hover{
+    color: #829199;
+}
+
+.payment_information input{
+    background: none;
+    outline: none;
+    border: none;
+    display: block;
+    line-height: 1.2em;
+    width: 96%;
+    font-size: inherit;
+    font-family: inherit;
+    padding: 0.5rem;
+    color: #182121;
+}
+
+.payment_information label{
+    top: -0.5rem;
+    left: 1rem;
+    padding: 0 0.5rem;
+    display: block;
+    font-size: 0.8rem;
+    color: #182121;
+}
+
+#card_name_container{
+    width: 100%;
+    border-bottom: 1px solid #829199;
+}
+
+#card_number_container{
+    border-right: 1px solid #829199;
+}
+
+#card_cvv_container{
+    border-left: 1px solid #829199;;
+}
+
+#card_cvv_container input{
+    width:90%;
+}
+
+#create_account_hr{
+    margin-top: 75px;
+}
+
+#password_recovered{
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.remove_button{
+    width: fit-content;
+    height: fit-content;
+    font-family: inherit;
+    font-size: inherit;
+    border: none;
+    color: inherit;
+    background-color: inherit;
+    text-decoration: underline;
+}
+
+.remove_button:hover{
+    color: #829199;
+}
+
+.remove_button:active{
+    background: transparent;
+}
